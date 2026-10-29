@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yardi Package Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Package Validation</h1>
+    <p class="subtitle">Select the package file first. The details below are read from its //NOTES section and cannot be edited.</p>
+
+    <form id="upload-form" novalidate>
+      <div class="field">
+        <label for="file">Package File <span class="req">*</span></label>
+
+        <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Choose or drop a .pkg file">
+          <p><strong>Drag &amp; drop</strong> a .pkg file here, or <span class="link">browse</span></p>
+          <p class="hint">Only .pkg files are accepted</p>
+        </div>
+        <input type="file" id="file" name="file" accept=".pkg" hidden />
+
+        <div id="file-info" class="file-info" hidden>
+          <div class="file-details">
+            <span id="file-name" class="file-name"></span>
+            <span id="file-size" class="file-size"></span>
+          </div>
+          <button type="button" id="remove-file" class="secondary">Remove</button>
+        </div>
+
+        <p class="field-error" id="file-error" role="alert"></p>
+      </div>
+
+      <p id="autofill-note" class="autofill-note" role="status" hidden></p>
+
+      <div class="field">
+        <label for="packageName">Package Name</label>
+        <input type="text" id="packageName" name="packageName" placeholder="Read from Script Name" disabled aria-describedby="packageName-error" />
+        <p class="field-error" id="packageName-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" placeholder="Read from Created By" disabled aria-describedby="username-error" />
+        <p class="field-error" id="username-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="caseNumber">Case Number</label>
+        <input type="text" id="caseNumber" name="caseNumber" placeholder="Read from Case" disabled aria-describedby="caseNumber-error" />
+        <p class="field-error" id="caseNumber-error" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label for="description">Package Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Read from Description" disabled aria-describedby="description-error"></textarea>
+        <p class="field-error" id="description-error" role="alert"></p>
+      </div>
+
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <section id="result" class="result" hidden></section>
+  </main>
+
+  <dialog id="warning-dialog" class="warning-dialog" aria-labelledby="warning-title">
+    <h2 id="warning-title">&#9888; Please review before continuing</h2>
+    <ul id="warning-list" class="warning-list"></ul>
+    <label class="confirm">
+      <input type="checkbox" id="warning-confirm" />
+      I have rechecked the data and the package.
+    </label>
+    <p class="field-error" id="warning-error" role="alert"></p>
+    <div class="dialog-actions">
+      <button type="button" id="warning-back" class="secondary">Back to form</button>
+      <button type="button" id="warning-continue" disabled>Continue</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

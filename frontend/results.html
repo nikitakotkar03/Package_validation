@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Validation Results</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="top">
+  <main class="card wide">
+    <div class="page-header">
+      <h1>Validation Results</h1>
+      <a class="button-link" href="index.html">Validate another package</a>
+    </div>
+
+    <section id="latest" class="result" hidden></section>
+    <p id="excel-note" class="excel-note" role="status" hidden></p>
+
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" id="tab-history" aria-selected="true" aria-controls="panel-history" class="tab active">Validation History</button>
+      <button type="button" role="tab" id="tab-log" aria-selected="false" aria-controls="panel-log" class="tab">PkgTesting_Utility_Log</button>
+    </div>
+
+    <section id="panel-history" role="tabpanel" aria-labelledby="tab-history">
+      <div class="toolbar">
+        <label for="user-filter">User</label>
+        <select id="user-filter"><option value="">All users</option></select>
+        <span id="history-count" class="count"></span>
+      </div>
+      <div class="table-wrap">
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th class="col-id">#</th>
+              <th class="col-user">User</th>
+              <th class="col-case">Case Number</th>
+              <th class="col-date">Date</th>
+              <th class="col-package">Package</th>
+              <th class="col-status">Status</th>
+              <th class="col-errors">Errors</th>
+              <th class="col-warnings">Warnings</th>
+            </tr>
+          </thead>
+          <tbody id="history-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="panel-log" role="tabpanel" aria-labelledby="tab-log" hidden>
+      <div class="toolbar"><span id="log-count" class="count"></span></div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>User Name</th><th>Package Name</th><th>Total Validations</th><th>Date of Package Testing</th></tr>
+          </thead>
+          <tbody id="log-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="results.js"></script>
+</body>
+</html>

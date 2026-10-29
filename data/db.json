@@ -1,0 +1,317 @@
+{
+  "history": [
+    {
+      "id": 1,
+      "username": "TEST",
+      "caseNumber": "123456",
+      "description": "TENANT FIX",
+      "fileName": "TenantFix_Case18487789.pkg",
+      "validatedAt": "2026-10-19T05:42:58.805Z",
+      "status": "Passed",
+      "errors": [],
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 2,
+      "username": "TEST2",
+      "caseNumber": "456789",
+      "description": "PROPSECT FIX",
+      "fileName": "TenantFix_Case18491773.pkg",
+      "validatedAt": "2026-10-19T05:44:36.175Z",
+      "status": "Failed",
+      "errors": [
+        "Missing //END SQL marker."
+      ],
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 3,
+      "username": "Nikita Kotkar",
+      "caseNumber": "789456",
+      "description": "Lease Charge Fix",
+      "fileName": "ChargesFix_Case18467583.pkg",
+      "validatedAt": "2026-10-19T06:14:38.810Z",
+      "status": "Failed",
+      "errors": [
+        "Missing //NOTES marker.",
+        "Missing //SQL marker."
+      ],
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 4,
+      "username": "Nikita Kotkar",
+      "caseNumber": "789456",
+      "description": "Tenant Fix",
+      "fileName": "ChargesFix_Case18467583.pkg",
+      "validatedAt": "2026-10-19T06:16:47.471Z",
+      "status": "Passed",
+      "errors": [],
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 5,
+      "username": "TEST",
+      "caseNumber": "789456",
+      "description": "789456",
+      "fileName": "ChargesFix_Case18467583.pkg",
+      "validatedAt": "2026-10-19T06:18:43.301Z",
+      "status": "Failed",
+      "errors": [
+        "UPDATE on trans must INNER JOIN backup_trans_datafixhistory.",
+        "UPDATE on trans affects 5 record(s) but backup_trans_datafixhistory holds 10.",
+        "UPDATE on camcharg affects 5 record(s) but backup_camcharg_datafixhistory holds 10."
+      ],
+      "warnings": [
+        "This package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 6,
+      "username": "TEST",
+      "caseNumber": "123456",
+      "description": "FIX",
+      "fileName": "ChargesFix_Case18467583.pkg",
+      "validatedAt": "2026-10-19T06:42:31.004Z",
+      "status": "Failed",
+      "errors": [
+        "UPDATE on trans must INNER JOIN backup_trans_datafixhistory."
+      ],
+      "warnings": [
+        "This package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 7,
+      "username": "TEST",
+      "caseNumber": "123456",
+      "description": "Package Test",
+      "fileName": "ChargesFix_Case18467583.pkg",
+      "validatedAt": "2026-10-19T06:46:34.796Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [
+        "This package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": "2026-10-19T07:33:19.270Z",
+      "excelSynced": true,
+      "excelAckSynced": true
+    },
+    {
+      "id": 8,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-26T10:29:42.272Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [
+        "The package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": "2026-10-26T10:30:15.116Z",
+      "excelSynced": true,
+      "excelAckSynced": true
+    },
+    {
+      "id": 9,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-26T10:46:43.921Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [
+        "The package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": "2026-10-26T10:46:47.155Z",
+      "excelSynced": true,
+      "excelAckSynced": true
+    },
+    {
+      "id": 10,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-26T11:24:56.021Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [
+        "The package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": "2026-10-26T11:24:58.799Z",
+      "excelSynced": true,
+      "excelAckSynced": true
+    },
+    {
+      "id": 11,
+      "username": "Nikita Kotkar",
+      "caseNumber": "19341184",
+      "description": "Package fix to enable the commHub setting “Require users to select a result when completing a call type follow-up prompt”.",
+      "fileName": "EnableCommHubSetting_Case19341184.pkg",
+      "validatedAt": "2026-10-26T12:03:44.496Z",
+      "status": "Failed",
+      "errors": [
+        "UPDATE on paramopt2 must INNER JOIN backup_paramopt2_datafixhistory."
+      ],
+      "warnings": [],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 12,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-27T07:35:24.253Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [
+        "The package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": "2026-10-27T07:35:39.517Z",
+      "excelSynced": true,
+      "excelAckSynced": true
+    },
+    {
+      "id": 13,
+      "username": "Nikita Kotkar",
+      "caseNumber": "19395313",
+      "description": "Package fix to delete 14 properties and its asscoaied units nad unit types in bulk.",
+      "fileName": "DeleteBulkProperty_Case19395313.pkg",
+      "validatedAt": "2026-10-27T08:07:52.103Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 14,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-27T08:09:01.007Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 15,
+      "username": "Nikita Kotkar",
+      "caseNumber": "19395313",
+      "description": "Package fix to delete 14 properties and its asscoaied units nad unit types in bulk.",
+      "fileName": "DeleteBulkProperty_Case19395313.pkg",
+      "validatedAt": "2026-10-27T08:12:20.535Z",
+      "status": "Failed",
+      "errors": [
+        "DELETE on property must include the condition iTypeStorage <> 0."
+      ],
+      "warnings": [],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 16,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-27T08:13:11.904Z",
+      "status": "Failed",
+      "errors": [
+        "The //SQL section contains no executable SQL."
+      ],
+      "warnings": [],
+      "acknowledgedAt": null,
+      "excelSynced": true,
+      "excelAckSynced": false
+    },
+    {
+      "id": 17,
+      "username": "Nikita Kotkar",
+      "caseNumber": "18437534",
+      "description": "Package to fix align the charges.",
+      "fileName": "TEST_Case18437534.pkg",
+      "validatedAt": "2026-10-27T09:32:28.674Z",
+      "status": "Passed",
+      "errors": [],
+      "warnings": [
+        "The package updates/deletes transaction records in trans, camcharg. Please check the data once again and check the post month."
+      ],
+      "acknowledgedAt": "2026-10-27T09:32:49.429Z",
+      "excelSynced": true,
+      "excelAckSynced": true
+    }
+  ],
+  "users": {
+    "test": {
+      "username": "TEST",
+      "firstSeen": "2026-10-19T05:42:58.805Z",
+      "totalValidations": 4,
+      "lastSeen": "2026-10-19T06:46:34.796Z"
+    },
+    "test2": {
+      "username": "TEST2",
+      "firstSeen": "2026-10-19T05:44:36.175Z",
+      "totalValidations": 1,
+      "lastSeen": "2026-10-19T05:44:36.175Z"
+    },
+    "nikita kotkar": {
+      "username": "Nikita Kotkar",
+      "firstSeen": "2026-10-19T06:14:38.810Z",
+      "totalValidations": 12,
+      "lastSeen": "2026-10-27T09:32:28.674Z"
+    }
+  },
+  "PkgTesting_Utility_Log": {
+    "test|chargesfix_case18467583.pkg": {
+      "UserName": "TEST",
+      "PkgName": "ChargesFix_Case18467583.pkg",
+      "TotalValidations": 3,
+      "TestDate": "2026-10-19T06:46:34.796Z",
+      "excelSyncedCount": 3
+    },
+    "nikita kotkar|test_case18437534.pkg": {
+      "UserName": "Nikita Kotkar",
+      "PkgName": "TEST_Case18437534.pkg",
+      "TotalValidations": 7,
+      "TestDate": "2026-10-27T09:32:28.674Z",
+      "excelSyncedCount": 7
+    },
+    "nikita kotkar|enablecommhubsetting_case19341184.pkg": {
+      "UserName": "Nikita Kotkar",
+      "PkgName": "EnableCommHubSetting_Case19341184.pkg",
+      "TotalValidations": 1,
+      "TestDate": "2026-10-26T12:03:44.496Z",
+      "excelSyncedCount": 1
+    },
+    "nikita kotkar|deletebulkproperty_case19395313.pkg": {
+      "UserName": "Nikita Kotkar",
+      "PkgName": "DeleteBulkProperty_Case19395313.pkg",
+      "TotalValidations": 2,
+      "TestDate": "2026-10-27T08:12:20.535Z",
+      "excelSyncedCount": 2
+    }
+  }
+}
